@@ -1,0 +1,114 @@
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  body {
+    /* This style below will be inherited */
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+  }
+  
+  .page_header{
+    font-size: 44px;
+    text-align: center;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    margin-bottom: 100px;
+  }
+  .thumbnail {
+      width: 100%;
+    }
+    
+    .art-title {
+      margin-top: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .art-info-grid {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    
+    .profile-picture {
+      width: 38px;
+      border-radius: 30px;
+    }
+    .thumbnail-row {
+      margin-bottom: 8px;
+      position: relative;
+    }
+    
+    .art-author,
+    .video-stats {
+      font-size: 12px;
+      color: rgb(96, 96, 96);
+    }
+    
+    .art-author {
+      margin-bottom: 4px;
+    }
+    
+    .art-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 40px;
+    }
+    
+    @media (max-width: 750px) {
+      .art-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (min-width: 751px) and (max-width: 999px) {
+      .art-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    
+    @media (min-width: 1000px) {
+      .art-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+    
+     .thumbnail-row .tooltip
+     {
+      position: absolute;
+      background-color: gray;
+      color: white;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 2px;
+      font-size: 12px;
+      bottom: 30%;
+      left: 20%;
+      opacity: 0;
+      transition: opacity 0.15s;
+      pointer-events: none;
+      white-space: pre-wrap;
+      width: 240px;
+      z-index: 1;
+    }
+    
+    
+  
+    .thumbnail-row:hover .tooltip
+     {
+      visibility: visible;
+      opacity: 1;
+    }
